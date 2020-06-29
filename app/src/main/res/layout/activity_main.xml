@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_marginTop="20sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:hint="Name"
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:hint="Phone No"
+            android:inputType="number"
+            android:layout_below="@id/name_edit"
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:hint="Phone No"
+            android:inputType="number"
+            android:layout_below="@id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_edit"
+            android:text="save"/>
+
+        <Button
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Display"
+            android:id="@+id/btn_display"
+            android:layout_below="@id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/edit_delete"
+            android:inputType="number"
+            android:hint="Enter Id"
+            android:layout_below="@id/btn_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/delete_btn"
+            android:layout_below="@id/edit_delete"
+            android:text="Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:inputType="number"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/update_id"
+            android:hint="Enter ID"
+            android:layout_below="@id/delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/update_name_edit"
+            android:layout_below="@id/update_id"
+            android:hint="Enter Updated Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/update_btn"
+            android:text="Update"
+            android:layout_below="@id/update_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>
